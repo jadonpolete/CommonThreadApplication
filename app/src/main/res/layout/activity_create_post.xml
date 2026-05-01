@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="28dp"
+    android:gravity="center"
+    android:background="@drawable/screen_background">
+
+    <TextView
+        android:id="@+id/tvCreatePostTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Post"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start a new discussion"
+        android:textColor="#BBBBBB"
+        android:textSize="16sp"
+        android:layout_marginBottom="28dp" />
+
+    <EditText
+        android:id="@+id/etPostTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Post Title"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#888888"
+        android:background="@drawable/input_background"
+        android:inputType="textCapSentences"
+        android:padding="14dp" />
+
+    <EditText
+        android:id="@+id/etPostDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:hint="Post Description"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#888888"
+        android:background="@drawable/input_background"
+        android:inputType="textMultiLine"
+        android:minLines="5"
+        android:gravity="top"
+        android:padding="14dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="14dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:text="Category:"
+            android:textColor="#BBBBBB"
+            android:textSize="14sp"
+            android:layout_marginEnd="10dp"
+            android:gravity="center_vertical" />
+
+        <Spinner
+            android:id="@+id/spinnerCategory"
+            android:layout_width="140dp"
+            android:layout_height="44dp"
+            android:background="@drawable/spinner_background"
+            android:padding="4dp"
+            android:gravity="center_vertical" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSubmitPost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/primary_button_background"
+        android:text="Submit Post"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btnBackToFeed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Back to Feed"
+        android:textColor="#BBBBBB" />
+
+    <TextView
+        android:id="@+id/tvCreatePostResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="" />
+
+</LinearLayout>

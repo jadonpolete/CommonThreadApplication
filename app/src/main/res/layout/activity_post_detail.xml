@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="28dp"
+    android:background="@drawable/screen_background">
+
+    <TextView
+        android:id="@+id/tvPostTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Post Title"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvPostAuthor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Author"
+        android:textColor="#BBBBBB"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/tvPostDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Post description"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/tvCommentsTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Comments"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginTop="28dp" />
+
+    <TextView
+        android:id="@+id/tvComments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No comments yet."
+        android:textColor="#BBBBBB"
+        android:layout_marginTop="8dp" />
+
+    <EditText
+        android:id="@+id/etComment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Write a comment"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#888888"
+        android:background="@drawable/input_background"
+        android:inputType="textMultiLine"
+        android:minLines="2"
+        android:gravity="top"
+        android:padding="14dp"
+        android:layout_marginTop="24dp" />
+
+    <Button
+        android:id="@+id/btnAddComment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Comment"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/primary_button_background"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnBackToFeed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back to Feed"
+        android:textColor="#BBBBBB"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/tvCommentResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="" />
+
+</LinearLayout>
